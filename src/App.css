@@ -1,0 +1,20 @@
+.webApp {
+  text-align: center;
+}
+
+h1 {
+  color: crimson;
+  height: 80px;
+}
+
+.bottoneClicca {
+  border-radius: 5px;
+  width: 9%;
+  height: 30px;
+  outline: none;
+  border-style: double;
+  border-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+

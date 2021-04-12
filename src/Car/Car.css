@@ -1,0 +1,17 @@
+.Car {
+    width: 60%;
+    border-style: solid;
+    border-color: rgb(189, 188, 188);
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.inputNewModello {
+    outline: none;
+    border-radius: 5px;
+    width: 190px;
+    height: 23px;
+    background-color: rgb(255, 204, 204);
+    border-style: solid;
+  }
