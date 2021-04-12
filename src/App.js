@@ -36,20 +36,10 @@ const car = () => {
     })
   };
 
-  // const ilMioStile = {
-  //   width: "60%",
-  //   borderStyle: "solid",
-  //   borderColor: "rgb(189, 188, 188)",
-  //   margin: "10px auto",
-  //   textAlign: "center",
-  //   padding: "15px"
-  // }
-
   return (
     <div className="webApp">
       <h1> Bonfanti AUTO </h1>
       <p> Listino modelli e prezzi </p>
-      {/* style={ilMioStile} */}
       <Car
         pincoPalla={haiCliccatoHandler.bind(this, "Nissan", "GTR", 90000)}
         marca={currentState.cars[0].marca}
