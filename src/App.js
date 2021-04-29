@@ -7,7 +7,10 @@ const car = () => {
     cars: [
       { marca: "BMW", modello: "M4", prezzo: 160000 },
       { marca: "Mercedes", modello: "SLS AMG", prezzo: 180000 },
-      { marca: "Audi", modello: "RS7", prezzo: 110000 }
+      { marca: "Audi", modello: "RS7", prezzo: 110000 },
+      { marca: "Subaru", modello: "BRZ", prezzo: 94000 },
+      { marca: "Chevrolet", modello: "Corvette", prezzo: 195000 },
+      { marca: "Maserati", modello: "Ghibli", prezzo: 99500 }
     ]
   });
 
@@ -20,7 +23,10 @@ const car = () => {
       cars: [
         { marca: "BMW", modello: "M4", prezzo: 160000 },
         { marca: "Mercedes", modello: "SLS AMG", prezzo: 180000 },
-        { marca: newMarca, modello: newModello, prezzo: newPrezzo }
+        { marca: newMarca, modello: newModello, prezzo: newPrezzo },
+        { marca: "Subaru", modello: "BRZ", prezzo: 94000 },
+        { marca: "Chevrolet", modello: "Corvette", prezzo: 195000 },
+        { marca: "Maserati", modello: "Ghibli", prezzo: 99500 }
       ]
       //testo: currentState.testo ho chiamato usestate 2 volte, non è + necessario
     })
@@ -31,15 +37,18 @@ const car = () => {
       cars: [
         { marca: "BMW", modello: "M4", prezzo: 160000 },
         { marca: "Mercedes", modello: event.target.value, prezzo: 180000 },
-        { marca: "Audi", modello: "RS7", prezzo: 110000 }
+        { marca: "Audi", modello: "RS7", prezzo: 110000 },
+        { marca: "Subaru", modello: "BRZ", prezzo: 94000 },
+        { marca: "Chevrolet", modello: "Corvette", prezzo: 195000 },
+        { marca: "Maserati", modello: "Ghibli", prezzo: 99500 }
       ]
     })
   };
 
   return (
     <div className="webApp">
-      <h1> Bonfanti AUTO </h1>
-      <p> Listino modelli e prezzi </p>
+      <h1> Concessionario AUTO </h1>
+      <p className="info"> Listino modelli e prezzi </p>
       <Car
         pincoPalla={haiCliccatoHandler.bind(this, "Nissan", "GTR", 90000)}
         marca={currentState.cars[0].marca}
@@ -58,7 +67,22 @@ const car = () => {
         modello={currentState.cars[2].modello}
         prezzo={currentState.cars[2].prezzo}
       >€</Car>
-      <p> {secondCurrentState.testo} </p>
+      <Car
+        marca={currentState.cars[3].marca}
+        modello={currentState.cars[3].modello}
+        prezzo={currentState.cars[3].prezzo}
+      >€</Car>
+      <Car
+        marca={currentState.cars[4].marca}
+        modello={currentState.cars[4].modello}
+        prezzo={currentState.cars[4].prezzo}
+      >€</Car>
+      <Car
+        marca={currentState.cars[5].marca}
+        modello={currentState.cars[5].modello}
+        prezzo={currentState.cars[5].prezzo}
+      >€</Car>
+      <p className="info"> {secondCurrentState.testo} </p>
       <button className="bottoneClicca"
         onClick={() => haiCliccatoHandler("Porsche", "911Turbo", 115000)}
       >Mostra Porsche</button>

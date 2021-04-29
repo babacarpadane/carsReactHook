@@ -1,20 +1,33 @@
 .webApp {
+  background-color: #a892ee;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 h1 {
-  color: crimson;
-  height: 80px;
+  font-size: 2rem;
+  margin: 0 1rem;
+  color:#40005d;
+}
+
+.info {
+  color:#40005d;
+  font-size: 1rem;
 }
 
 .bottoneClicca {
-  border-radius: 5px;
-  width: 9%;
-  height: 30px;
-  outline: none;
-  border-style: double;
-  border-color: rgb(255, 0, 0);
-  background-color: rgba(255, 0, 0);
-  color: rgb(255, 255, 255);
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
 }
 
