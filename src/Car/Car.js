@@ -15,10 +15,10 @@ const car = (props) => {
         <div className="Car">
             {/* prenderà props.pincoPalla solo nelle componenti in cui lo trova */}
             {/* style={ilMioStile} dentro il tag <p>*/}
-            <p onClick={props.pincoPalla} className="datiAuto">
+            <p className="datiAuto">
                 Marca: {props.marca}, modello: {props.modello}, prezzo: {props.prezzo} {props.children}
             </p>
-            <input type="text" className="inputNewModello" onChange={props.newModello} value={props.modello} />
+            {/* <input type="text" className="inputNewModello" onChange={props.newModello} value={props.modello} /> */}
         </div>
     );
 };
